@@ -22,7 +22,7 @@ public class LogidRequest extends BaseHttpRequestClient {
     public String setUrl() {
         return new RequestUrlUtils.Builder()
                 .setHost(ParkingApp.HOST)
-                .setPath("/statusCheck")
+                .setPath("statusCheck")
 //                .addParam("logid",logid)
 //                .addParam("markerid",markerid)
                 .build();

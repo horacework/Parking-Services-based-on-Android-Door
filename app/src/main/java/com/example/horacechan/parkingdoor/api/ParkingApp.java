@@ -10,7 +10,7 @@ public class ParkingApp extends Application {
 
     public static Context APP_CONTEXT;
 
-    public static final String HOST="http://192.168.199.246:8080/service";
+    public static final String HOST="http://119.29.163.234:8080/parking/service/";
 
     public static final String MARKERID="e5a3715d-047c-11e6-b034-00ff9099da81";
 

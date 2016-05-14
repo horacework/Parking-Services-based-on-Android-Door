@@ -1,10 +1,10 @@
 package com.example.horacechan.parkingdoor;
 
+import android.app.AlertDialog;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.example.horacechan.parkingdoor.api.ParkingApp;
 import com.example.horacechan.parkingdoor.api.model.StatusEntity;
@@ -32,10 +32,20 @@ public class MainActivity extends ActionBarActivity implements RefreshQRThread.O
                 case 0:
                     break;
                 case 1:
-                    Toast.makeText(MainActivity.this,"欢迎进库！",Toast.LENGTH_LONG).show();
+                    //Toast.makeText(MainActivity.this,"欢迎进库！",Toast.LENGTH_LONG).show();
+                    AlertDialog.Builder dialog1 = new AlertDialog.Builder(MainActivity.this);
+                    dialog1.setTitle("扫码提示")
+                            .setMessage("欢迎进库！")
+                            .setPositiveButton("确定", null)
+                            .show();
                     break;
                 case 2:
-                    Toast.makeText(MainActivity.this,"欢迎出库！",Toast.LENGTH_LONG).show();
+                    //Toast.makeText(MainActivity.this,"欢迎出库！",Toast.LENGTH_LONG).show();
+                    AlertDialog.Builder dialog2 = new AlertDialog.Builder(MainActivity.this);
+                    dialog2.setTitle("扫码提示")
+                            .setMessage("欢迎出库！")
+                            .setPositiveButton("确定", null)
+                            .show();
                     break;
             }
             try {
